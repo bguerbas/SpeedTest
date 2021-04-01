@@ -48,7 +48,7 @@
 
 ## Deploy da Aplicação :dash:
 
-![ezgif.com-gif-maker](C:\Users\bague\Downloads\ezgif.com-gif-maker.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/29557513/113329660-35f73100-92f4-11eb-9a91-366c42ea0684.gif)
 
 
 
@@ -76,11 +76,11 @@ No Excel:
 
 - Salvar como dados.xlsx.
 
-  ![1](D:\VelocidadeInternet\1.png)
+  ![1](https://user-images.githubusercontent.com/29557513/113329422-ea448780-92f3-11eb-8111-fda38fa7a05c.png)
 
   
 
-  ![2](D:\VelocidadeInternet\2.png)
+  ![2](https://user-images.githubusercontent.com/29557513/113329582-20820700-92f4-11eb-80fe-7f555f6278f3.png)
 
   
 
