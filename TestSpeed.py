@@ -12,7 +12,7 @@ def internet():
     velocidade = s.download(threads=None)*(10**-6)
     df.loc[len(df)] = [data_atual, hora_atual, round(velocidade)]
     df.to_excel('dados.xlsx', sheet_name='base', index=False)
-    Timer(5, internet).start()
+    Timer(30,internet).start()
 
 
 internet()
