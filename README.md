@@ -22,7 +22,7 @@
 - [Observações](#observações-eyes)
 - [Bibliotecas utilizadas](#bibliotecas-utilizadas-books) 
 - [Melhorias](#melhorias-rocket)
-- [Desenvolvedores/Contribuintes](#desenvolvedores-e-contribuintes-computer)
+- [Desenvolvedores e Contribuintes](#desenvolvedores-e-contribuintes-computer)
 - [Licença](#licença-grey_exclamation)
 
 
