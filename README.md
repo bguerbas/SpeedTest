@@ -22,7 +22,7 @@
 - [Observações](#observações-eyes)
 - [Bibliotecas utilizadas](#bibliotecas-utilizadas-books) 
 - [Melhorias](#melhorias-rocket)
-- [Desenvolvedores/Contribuintes](#desenvolvedores/contribuintes-computer)
+- [Desenvolvedores/Contribuintes](#desenvolvedores-e-contribuintes-computer)
 - [Licença](#licença-grey_exclamation)
 
 
@@ -132,7 +132,7 @@ Como eu fiz no momento de "desespero" o código, com o tempo, irei fazer melhori
 
 
 
-## Desenvolvedores/Contribuintes :computer:
+## Desenvolvedores e Contribuintes :computer:
 
 - Bárbara Guerbas de Figueiredo - [LinkedIn]( https://www.linkedin.com/in/barbaragfigueiredostatistics/) - [Email](baguerbassita@gmail.com)
 
