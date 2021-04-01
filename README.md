@@ -116,6 +116,7 @@ Como eu fiz no momento de "desespero" o código, com o tempo, irei fazer melhori
 - [SpeedTest](https://pypi.org/project/speedtest-cli/)
 - [Threading](https://pypi.org/project/threaded/)
 - [Pandas](https://pypi.org/project/pandas/)
+- [Openxl](https://pypi.org/project/openpyxl/)
 
 
 
