@@ -86,7 +86,7 @@ No Excel:
 
 ## Como rodar a aplicação :arrow_forward:
 
-No terminal navegar até o diretório onde se encontram os arquivos e digitar:
+No terminal navegar até o diretório onde se encontram os arquivos [Excel](https://github.com/bguerbas/SpeedTest/blob/main/dados.xlsx) e o [TestSpeed.py](https://github.com/bguerbas/SpeedTest/blob/main/TestSpeed.py), e digitar:
 
 ```
 python TestSeep.py
