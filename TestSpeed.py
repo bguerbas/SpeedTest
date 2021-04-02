@@ -3,34 +3,34 @@ from datetime import datetime
 import pandas as pd
 from threading import Timer
 
-# função para gravar dados da velocidade da internet
+
+class retrieve_current:
+    @staticmethod
+    def time():
+        return datetime.now().strftime('%H:%M')
+
+    @staticmethod
+    def date():
+        return datetime.now().strftime('%d/%m/%Y')
+
+    @staticmethod
+    def internet_speed():
+        return speedtest.Speedtest().download(threads=None)*(10**-6)
 
 
-class internet_speed_data:
-    def __init__(self):
-        date = None
-        time = None
-        speed = None
-
-
-class internet_speed(internet_speed_data):
-    def determine:
-        date = datetime.now().strftime('%d/%m/%Y')
-        time = datetime.now().strftime('%H:%M')
-        speed = s.download(threads=None)*(10**-6)
+def write_to_excel(parameters_list):
+    df = pd.read_excel('dados.xlsx', sheet_name='base')
+    df.loc[len(df)] = parameters_list
+    df.to_excel('dados.xlsx', sheet_name='base', index=False)
 
 
 def internet():
     print("starting")
-    df = pd.read_excel('dados.xlsx', sheet_name='base')
-    s = speedtest.Speedtest()
-    data_atual = datetime.now().strftime('%d/%m/%Y')
-    hora_atual = datetime.now().strftime('%H:%M')
-    velocidade = s.download(threads=None)*(10**-6)
-    print(velocidade)
-    df.loc[len(df)] = [data_atual, hora_atual, round(velocidade)]
-    df.to_excel('dados.xlsx', sheet_name='base', index=False)
-    Timer(1, internet).start()
+    write_to_excel([retrieve_current.date(),
+                    retrieve_current.time(),
+                    round(retrieve_current.internet_speed())])
 
 
-internet()
+def execute_application():
+    internet()
+    Timer(1, execute_application).start()
