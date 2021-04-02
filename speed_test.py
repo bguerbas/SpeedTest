@@ -2,13 +2,6 @@ import speedtest
 from datetime import datetime
 import pandas as pd
 from threading import Timer
-import unittest
-
-
-class internet_function_test(unittest.TestCase):
-    def test_internet_function(self):
-        self.assertEqual([retrieve_current.date(), retrieve_current.time(), round(retrieve_current.internet_speed())],
-                         internet(lambda parameters_list: parameters_list))
 
 
 class retrieve_current:
@@ -42,5 +35,4 @@ def execute_application():
     Timer(1, execute_application).start()
 
 
-unittest.main()
 execute_application()
