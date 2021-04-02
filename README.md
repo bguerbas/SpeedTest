@@ -100,7 +100,7 @@ A ideia do projeto surgiu em um momento de estresse por perceber a internet trav
 
 Pesquisei anteriormente a fidedignidade do site Speedtest e se era válido, como prova, os dados gerados. Para quem quiser dar uma olhada, há dois sites bem interessantes que abordam esses assuntos:
 
-- [Comparação de sites que testam a velocida da internet](https://melhorescolha.com/blog/teste-de-velocidade-resultados-diferentes/)
+- [Comparação de sites que testam a velocidade da internet](https://melhorescolha.com/blog/teste-de-velocidade-resultados-diferentes/)
 - [Provas para contestar com a operadora de banda larga](https://blog.intnet.com.br/entenda-como-fazer-o-teste-de-velocidade-da-sua-internet/)
 
 A diferença dos megabytes testados é muito mínima, pela facilidade e disponibilidade eu escolhi o speedtest.
