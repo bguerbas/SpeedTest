@@ -124,7 +124,7 @@ Como eu fiz no momento de "desespero" o código, com o tempo, irei fazer melhori
 
 :memo: Incluir o nPerf, ping, upload, hora de início e término para rodar o programa;
 
-:memo: Armazenar os dados em uma banco de dados relacional;
+:memo: Armazenar os dados em uma banco de dados relacional, printar na tela em tempos em tempos a média da velocidade até aquele momento;
 
 :memo: Fazer input permitindo que o usuário entre com dados da sua velocidade contratada e o custo dela;
 
