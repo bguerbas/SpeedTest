@@ -128,7 +128,7 @@ Como eu fiz no momento de "desespero" o código, com o tempo, irei fazer melhori
 
 :memo: Fazer input permitindo que o usuário entre com dados da sua velocidade contratada e o custo dela;
 
-:memo: Fazer uma análise de estatística básica de velocidade por dia/mês, o quanto está sendo descontado e o quanto deveria ser cobrado/dia pela velocidade que chega.
+:memo: Fazer uma análise de estatística básica de velocidade por dia/mês/porcentagem, o quanto está sendo descontado e o quanto deveria ser cobrado/dia pela velocidade que chega.
 
 
 
