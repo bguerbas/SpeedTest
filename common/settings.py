@@ -1,0 +1,8 @@
+DOWNLOAD_SCALE_FACTOR = 10**-6
+DOWNLOAD_SPEED_DECIMAL_PLACES = 2
+
+LOG_DATE_FORMAT = '%d/%m/%Y'
+LOG_TIME_FORMAT = '%H:%M:%S'
+
+OUTPUT_FILE_PATH = 'test_results/speed-data.xlsx'
+SAMPLING_INTERVAL = 5  # in seconds
