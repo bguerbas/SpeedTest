@@ -1,5 +1,4 @@
 # Base imports
-from __future__ import annotations
 from typing import (
     Any,
     Iterable,
@@ -20,21 +19,23 @@ logging.basicConfig(
 
 class PeriodicThread:
 
-    """A class to represent a person.
+    """A class that implements a thread performing a periodic job.
+
+    Adapted for the class InfiniteTimer:
+    https://qastack.com.br/programming/12435211/python-threading-timer-repeat-function-every-n-seconds
 
     Attributes
     ----------
-    name : str
-        first name of the person
-    surname : str
-        family name of the person
-    age : int
-        age of the person
-
-    Methods
-    -------
-    info(additional=""):
-        Prints the person's name and age.
+    _should_continue : boolean
+        Flag that allows of hinders the execution of the job
+    is_running : boolean
+        Flag that indicates if the job is being executed
+    seconds_to_wait : int
+        The period, in seconds, in which the job is repeated
+    target_function : callable
+        The function in which the job is performed
+    thread : threading.Timer
+        The encapsulated periodic thread object
 
     """
 
@@ -47,13 +48,11 @@ class PeriodicThread:
         self.thread: Timer
 
     def _handle_target(self, *args, **kwargs) -> None:
-        try:
-            self.is_running = True
-            self.target_function(*args, **kwargs)
-            self.is_running = False
-            self._start_thread(args, kwargs)
-        except Exception as exc:
-            print(str(exc))
+        """Helper function that makes the calls to the target function periodic."""
+        self.is_running = True
+        self.target_function(*args, **kwargs)
+        self.is_running = False
+        self._start_thread(args, kwargs)
 
     def _start_thread(self, args: Iterable[Any] = None, kwargs: Mapping[str, Any] = None) -> None:
         if self._should_continue:           # Code could have been running when cancel was called.

@@ -14,7 +14,7 @@ if __name__ == '__main__':
         print('Starting network speed logging service...')
 
         job_arguments = [
-            settings.OUTPUT_FILE_PATH,  # output_file
+            settings.OUTPUT_FILE_PATH,
         ]
 
         speed_logger = NetworkSpeedLogger(log_speed_into_spreadsheet)
