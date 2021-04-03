@@ -1,0 +1,5 @@
+pandas==1.2.3
+threaded==4.1.0
+speedtest-cli==2.1.2
+xlrd==2.0.1
+openpyxl==3.0.7
