@@ -1,0 +1,10 @@
+# IDE generated folders
+.vscode/
+
+# Virtual environments
+venv/
+env/
+
+# Python execution related caches
+__pycache__/
+.mypy_cache/

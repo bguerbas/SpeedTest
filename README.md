@@ -11,14 +11,11 @@
 ### Tópicos :writing_hand:
 
 - [Descrição do projeto](#descrição-do-projeto-file_folder)
-
 - [Funcionalidades](#funcionalidades-gear)
-
 - [Deploy da Aplicação](#deploy-da-aplicação-dash)
-
 - [Pré-requisitos](#pré-requisitos-pushpin)
-
 - [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+- [Code linting](#code-linting)
 - [Observações](#observações-eyes)
 - [Bibliotecas utilizadas](#bibliotecas-utilizadas-books) 
 - [Melhorias](#melhorias-rocket)
@@ -45,30 +42,25 @@
 :heavy_check_mark: O intervalo de tempo é ajustável
 
 
-
-## Deploy da Aplicação :dash:
-
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/29557513/113329660-35f73100-92f4-11eb-9a91-366c42ea0684.gif)
-
-
-
 ## Pré-requisitos :pushpin:
 
-No Python (salvar o script como TestSpeed.py) :
+### Instalação de dependências
 
-```
-pip install pandas
+Após clonar o projeto localmente, instalar as dependências de desenvolvimento e do projeto via algum ambiente
+virtual para Python de sua escolha. Aqui foi utilizado o [virtualenv](https://virtualenv.pypa.io/en/latest/) para Python 3.8.
+
+Executar, na raiz do projeto:
+
+```bash
+$ virtualenv --python=python3 venv \
+&& source venv/bin/activate \
+&& pip install --upgrade pip \
+&& pip install -r requirements-dev.txt \
+&& pip install -r requirements.txt
 ```
 
-```
-pip install threaded
-```
 
-```
-pip install speedtest-cli
-```
-
-No Excel:
+### Armazemamento de resultados no Excel:
 
 - Criar uma planilha nomeada como 'base';
 
@@ -86,13 +78,29 @@ No Excel:
 
 ## Como rodar a aplicação :arrow_forward:
 
-No terminal navegar até o diretório onde se encontram os arquivos [Excel](https://github.com/bguerbas/SpeedTest/blob/main/dados.xlsx) e o [TestSpeed.py](https://github.com/bguerbas/SpeedTest/blob/main/TestSpeed.py), e digitar:
-
+```bash
+$ chmod 777 main.py
+$ ./main.py
 ```
-python TestSeep.py
+
+O serviço agora irá periodicamente atualizar a planilha Excel em `test_results/speed-data.xlsx`. A saída do script deverá
+ser similar à:
+
+![main-output](https://user-images.githubusercontent.com/35070513/113494643-858a5800-94c0-11eb-8be6-5a21b1de8776.png)
+
+Para encerrar o script, basta pressionar `Ctrl+C`.
+
+## Code linting
+
+O code linting aqui é realizado com o auxílio da biblioteca [prospector](). Para executar a mesma, basta roda na raíz do projeto:
+
+```bash
+$ prospector
 ```
 
+Caso o código esteja seguindo as PEPs e não existam inconsistências nas anotações de tipos, a saída deverá ser similar à:
 
+![prospector-output](https://user-images.githubusercontent.com/35070513/113494802-4ceb7e00-94c2-11eb-86c2-bc71c322d30e.png)
 
 ## Observações :eyes:
 
@@ -113,11 +121,14 @@ Como eu fiz no momento de "desespero" o código, com o tempo, irei fazer melhori
 
 ## Bibliotecas utilizadas :books:
 
+### Produção
 - [SpeedTest](https://pypi.org/project/speedtest-cli/)
 - [Threading](https://pypi.org/project/threaded/)
 - [Pandas](https://pypi.org/project/pandas/)
 - [Openxl](https://pypi.org/project/openpyxl/)
-
+### Desenvolvimento
+- [Prospector](https://pypi.org/project/prospector/)
+- [Mypy](http://mypy-lang.org/)
 
 
 ## Melhorias :rocket:
@@ -135,6 +146,7 @@ Como eu fiz no momento de "desespero" o código, com o tempo, irei fazer melhori
 ## Desenvolvedores e Contribuintes :computer:
 
 - Bárbara Guerbas de Figueiredo - [LinkedIn]( https://www.linkedin.com/in/barbaragfigueiredostatistics/) - [Email](baguerbassita@gmail.com)
+- Guilherme Lima Gonçalves - [LinkedIn]( https://www.linkedin.com/in/guligon90/) - [Email](guligon90@gmail.com)
 
 
 
