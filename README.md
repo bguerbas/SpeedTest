@@ -57,15 +57,7 @@
 No Python (salvar o script como TestSpeed.py) :
 
 ```
-pip install pandas
-```
-
-```
-pip install threaded
-```
-
-```
-pip install speedtest-cli
+pip install pandas threaded speedtest-cli
 ```
 
 No Excel:
@@ -89,7 +81,7 @@ No Excel:
 No terminal navegar até o diretório onde se encontram os arquivos [Excel](https://github.com/bguerbas/SpeedTest/blob/main/dados.xlsx) e o [TestSpeed.py](https://github.com/bguerbas/SpeedTest/blob/main/TestSpeed.py), e digitar:
 
 ```
-python TestSeep.py
+python TestSpeed.py
 ```
 
 
