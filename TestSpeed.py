@@ -13,8 +13,8 @@ def internet():
     df.loc[len(df)] = [data_atual, hora_atual, round(velocidade)]
     df.to_excel('dados.xlsx', sheet_name='base', index=False)
     Timer(30,internet).start()
+    print(f"Velocidade salva às {hora_atual}")
 
 
 internet()
-
 
