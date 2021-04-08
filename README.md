@@ -53,19 +53,8 @@
 
 
 ## Pré-requisitos :pushpin:
-
-No Python (salvar o script como TestSpeed.py) :
-
-```
-pip install pandas
-```
-
-```
-pip install threaded
-```
-
-```
-pip install speedtest-cli
+```sh
+pip install -r requirements.txt
 ```
 
 No Excel:
