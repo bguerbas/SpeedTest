@@ -12,9 +12,6 @@ def internet():
     data_atual = datetime.now().strftime('%d/%m/%Y')
     hora_atual = datetime.now().strftime('%H:%M')
     velocidade = s.download(threads=None)*(10**-6)
-    print(data_atual)
-    print(hora_atual)
-    print(round(velocidade))
 
     df.loc[len(df)] = [data_atual, hora_atual, round(velocidade)]
     df.to_excel('dados.xlsx', sheet_name='base', index=False)
@@ -23,7 +20,7 @@ def internet():
     
     Timer((60*minutos), internet).start()
 
-print("Start timer, executar a cada " + str((60*minutos)/60) + " minutos")
+print("Timer iniciado, executar a cada " + str((60*minutos)/60) + " minutos")
 internet()
 
 
