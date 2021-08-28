@@ -37,7 +37,11 @@ def internet():
                 pingInstagram = i
 
         df.loc[len(df)] = [data_atual, hora_atual, round(velocidade), round(upload), pingGoogle.resultado, pingGoogle.mensagem, pingAWS.resultado, pingAWS.mensagem, pingYoutube.resultado, pingYoutube.mensagem, pingFacebook.resultado, pingFacebook.mensagem, pingInstagram.resultado, pingInstagram.mensagem]
-        df.to_excel('dados.xlsx', sheet_name='base', index=False)
+        
+        try:
+           df.to_excel('dados.xlsx', sheet_name='base', index=False)
+        except PermissionError:
+            print("Erro, permissão negada para escrever na planilha")
     except:
         print("Erro, internet sem conexão")
         velocidade = 0
@@ -50,7 +54,11 @@ def internet():
         pingInstagram = res
 
         df.loc[len(df)] = [data_atual, hora_atual, round(velocidade), round(upload), pingGoogle.resultado, pingGoogle.mensagem, pingAWS.resultado, pingAWS.mensagem, pingYoutube.resultado, pingYoutube.mensagem, pingFacebook.resultado, pingFacebook.mensagem, pingInstagram.resultado, pingInstagram.mensagem]
-        df.to_excel('dados.xlsx', sheet_name='base', index=False)
+        
+        try:
+           df.to_excel('dados.xlsx', sheet_name='base', index=False)
+        except PermissionError:
+            print("Erro, permissão negada para escrever na planilha")
     
     print("Registro feito na planilha. " + hora_atual + " | Velocidade download: " + str(round(velocidade)) + " | Velocidade upload: " + str(round(upload))+ " | Ping Google: " + str(round(pingGoogle.resultado)))
 
