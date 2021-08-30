@@ -4,7 +4,7 @@ import pandas as pd
 from threading import Timer
 from ping3 import ping
 
-minutos = 3
+minutos = 20
 # Criando classe para facilitar o armazenamento do resultado do ping
 class PingRes:
     def __init__(self, host, mensagem, resultado):
@@ -92,4 +92,3 @@ def pingPong():
 
 print("Timer iniciado, executar a cada " + str((60*minutos)/60) + " minutos")
 internet()
-
