@@ -1,0 +1,5 @@
+Google: google.com
+AWS_Brasil: quicksight.sa-east-1.amazonaws.com
+Youtube: youtube.com
+Facebook: facebook.com
+Instagram: instagram.com
