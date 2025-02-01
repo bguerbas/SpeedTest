@@ -1,3 +1,7 @@
+# Pre requisitos
+## pip install openpyxl
+## pip install pandas
+
 import speedtest
 from datetime import datetime
 import pandas as pd
@@ -13,6 +17,5 @@ def internet():
     df.loc[len(df)] = [data_atual, hora_atual, round(velocidade)]
     df.to_excel('dados.xlsx', sheet_name='base', index=False)
     Timer(30,internet).start()
-
-
+    
 internet()
