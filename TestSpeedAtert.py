@@ -35,7 +35,7 @@ def internet():
         mensagem = f"⚠️ Alerta de Internet Lenta!\nVelocidade registrada: {round(velocidade)} Mbps\nData: {data_atual} - Hora: {hora_atual}"
         enviar_alerta_whatsapp(mensagem)
 
-    # Reexecuta a função a cada 5 minutos (300 segundos)
+    # Reexecuta a função a cada 2 minutos (120 segundos)
     Timer(120, internet).start()
 
 internet()
