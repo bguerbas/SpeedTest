@@ -1,0 +1,5 @@
+requests
+openpyxl
+pandas
+threaded
+speedtest-cli
