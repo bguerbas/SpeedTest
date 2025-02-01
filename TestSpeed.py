@@ -1,5 +1,5 @@
-# Instalar a biblioteca requirements
-# python3 -m pip install -r requirements.txt
+# Instalar a biblioteca requirements merge to branch master
+# pip3 install -r requirements.txt
 
 import speedtest
 from datetime import datetime

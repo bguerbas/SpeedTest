@@ -1,4 +1,3 @@
-requests
 openpyxl
 pandas
 threaded
