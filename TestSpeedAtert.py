@@ -36,6 +36,6 @@ def internet():
         enviar_alerta_whatsapp(mensagem)
 
     # Reexecuta a função a cada 5 minutos (300 segundos)
-    Timer(300, internet).start()
+    Timer(120, internet).start()
 
 internet()
