@@ -42,7 +42,7 @@
 
 :heavy_check_mark: Roda background, não afetando outras tarefas (exceto se estiver instalando pacotes do python)
 
-:heavy_check_mark: O intervalo de tempo é ajustável
+:heavy_check_mark: O intervalo de tempo é ajustável - > (Timer(120,internet).start())
 
 
 
